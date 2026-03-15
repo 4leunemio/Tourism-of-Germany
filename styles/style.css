@@ -1,0 +1,412 @@
+/* ===========================
+   GLOBAL STYLES
+   Colors from the German Flag:
+     Black : #000000
+     Red   : #DD0000
+     Gold  : #FFCC00
+   Font: Arial, sans-serif
+   =========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#ffffff;
+  color:#222222;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:#222222;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+/* ===========================
+   FLAG BAR
+   =========================== */
+
+.flag-bar{
+  display:flex;
+  height:6px;
+}
+
+.flag-bar .black{
+  width:33%;
+  background:#000000;
+  border-top:1px solid #333333;
+}
+
+.flag-bar .red{
+  width:33%;
+  background:#DD0000;
+}
+
+.flag-bar .gold{
+  width:34%;
+  background:#FFCC00;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+header{
+  background:#ffffff;
+  padding:0 40px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:4px solid #FFCC00;
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:60px;
+}
+
+/* Logo */
+
+.site-logo img{
+  width: 45%;
+  height: 45%;
+  position: sticky;
+}
+
+
+/* ===========================
+   NAVIGATION
+   =========================== */
+
+nav ul{
+  list-style:none;
+  display:flex;
+}
+
+nav ul li{
+  position:relative;
+}
+
+nav ul li a{
+  display:block;
+  padding:18px 16px;
+  color: black;
+  font-size:14px;
+  font-weight:bold;
+}
+
+nav ul li a:hover{
+  background:#FFCC00;
+  color:#000000;
+}
+
+/* ===========================
+   DROPDOWN
+   =========================== */
+
+nav ul li ul{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#ffffff;
+  min-width:200px;
+  border:1px solid #dddddd;
+  border-top:3px solid #DD0000;
+  z-index:999;
+}
+
+nav ul li:hover ul{
+  display:block;
+}
+
+nav ul li ul li a{
+  padding:12px 18px;
+  color:#333333;
+  font-size:13px;
+  border-bottom:1px solid #eeeeee;
+}
+
+nav ul li ul li:last-child a{
+  border-bottom:none;
+}
+
+nav ul li ul li a:hover{
+  background:#FFCC00;
+  color:#000000;
+  padding-left:24px;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+
+.hero{
+  background:#111111;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), var(--hero-image);
+  background-size:cover;
+  background-position:center;
+  color:#ffffff;
+  text-align:center;
+  padding:100px 20px;
+}
+
+
+.hero h1 .black {
+  -webkit-text-stroke-width: 2.3px;
+  -webkit-text-stroke-color: #000000; 
+}
+
+.hero h1 .red {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DD0000; 
+}
+
+.hero h1 .gold {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFCC00; 
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:16px;
+
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:28px;
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.hero-btn{
+  display:inline-block;
+  background:#FFCC00;
+  color:#000000;
+  padding:14px 32px;
+  font-size:15px;
+  font-weight:bold;
+  border-radius:4px;
+}
+
+.hero-btn:hover{
+  background:#DD0000;
+  color:#ffffff;
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+
+main{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+main h2{
+  font-size:26px;
+  margin-bottom:12px;
+  color:#000000;
+
+}
+
+main h3{
+  font-size:20px;
+  margin-bottom:8px;
+  color:#000000;
+}
+
+main p{
+  margin-bottom:16px;
+  font-size:15px;
+  color:#555555;
+}
+
+.image-arts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;               
+}
+
+.image-arts img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+
+/* ===========================
+   CARD GRID
+   =========================== */
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:24px;
+  margin-bottom:40px;
+  text-align: justify;
+}
+
+.card{
+  background:#ffffff;
+  border:1px solid #dddddd;
+  border-top:4px solid #FFCC00;
+  overflow:hidden;
+}
+
+.card:hover{
+  border-top-color:#DD0000;
+}
+
+.card-img{
+  height:180px;
+  background:#cccccc;
+  overflow:hidden;
+}
+
+.card-img img{
+  height:100%;
+  object-fit:cover;
+}
+
+.card-img img:hover{
+  filter: brightness(80%);
+}
+
+.card-body{
+  padding:16px;
+  text-align: justify;
+}
+
+.card-body h3{
+  font-size:17px;
+  margin-bottom:6px;
+}
+
+.card-body p{
+  font-size:13px;
+  color:#777777;
+  margin-bottom:12px;
+}
+
+.nazi-style{
+  color: #ff0606;
+  text-decoration: underline;
+}
+
+.nazi-style:hover{
+  color: #c00101;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.card-link{
+  display:inline-block;
+  background:#DD0000;
+  color:#ffffff;
+  padding:8px 16px;
+  font-size:13px;
+}
+
+.card-link:hover{
+  background:#FFCC00;
+  color:#000000;
+}
+
+/* ===========================
+   INFO BOX
+   =========================== */
+
+.info-box{
+  background:#fffbea;
+  border:1px solid #FFCC00;
+  border-left:5px solid #FFCC00;
+  padding:20px 24px;
+  margin-bottom:28px;
+}
+
+.info-box h3{
+  margin-bottom:8px;
+}
+
+.info-box p{
+  font-size:14px;
+  color:#555555;
+}
+
+.info-box img {
+  float: left;
+  width: 10%;
+  height: 10%;
+  margin-right: 40px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer{
+  background:#000000;
+  color:#ffffff;
+  padding:40px;
+  margin-top:60px;
+}
+
+.footer-bottom{
+  text-align:center;
+  font-size:12px;
+  border-top:1px solid #333333;
+  padding-top:20px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width:900px){
+
+  .card-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media (max-width:600px){
+
+  .card-grid{
+    grid-template-columns:1fr;
+  }
+
+  .header-inner{
+    flex-direction:column;
+    height:auto;
+    padding:10px 0;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:26px;
+  }
+
+}
+
