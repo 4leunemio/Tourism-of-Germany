@@ -30,9 +30,7 @@ img{
   display:block;
 }
 
-/* ===========================
-   FLAG BAR
-   =========================== */
+/* FLAG BAR */
 
 .flag-bar{
   display:flex;
@@ -55,9 +53,7 @@ img{
   background:#FFCC00;
 }
 
-/* ===========================
-   HEADER
-   =========================== */
+/* HEADER */
 
 header{
   background:#ffffff;
@@ -84,9 +80,7 @@ header{
 }
 
 
-/* ===========================
-   NAVIGATION
-   =========================== */
+/* NAVIGATION */
 
 nav ul{
   list-style:none;
@@ -110,9 +104,7 @@ nav ul li a:hover{
   color:#000000;
 }
 
-/* ===========================
-   DROPDOWN
-   =========================== */
+/* DROPDOWN */
 
 nav ul li ul{
   display:none;
@@ -147,9 +139,7 @@ nav ul li ul li a:hover{
   padding-left:24px;
 }
 
-/* ===========================
-   HERO SECTION
-   =========================== */
+/* HERO SECTION */
 
 .hero{
   background:#111111;
@@ -206,9 +196,7 @@ nav ul li ul li a:hover{
   color:#ffffff;
 }
 
-/* ===========================
-   MAIN CONTENT
-   =========================== */
+/* MAIN CONTENT */
 
 main{
   max-width:1100px;
@@ -248,9 +236,7 @@ main p{
 }
 
 
-/* ===========================
-   CARD GRID
-   =========================== */
+/* CARD GRID */
 
 .card-grid{
   display:grid;
@@ -327,9 +313,7 @@ main p{
   color:#000000;
 }
 
-/* ===========================
-   INFO BOX
-   =========================== */
+/* INFO BOX */
 
 .info-box{
   background:#fffbea;
@@ -355,9 +339,7 @@ main p{
   margin-right: 40px;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+/* FOOTER */
 
 footer{
   background:#000000;
@@ -375,9 +357,7 @@ footer{
   margin:0 auto;
 }
 
-/* ===========================
-   RESPONSIVE
-   =========================== */
+/* RESPONSIVE */
 
 @media (max-width:900px){
 
